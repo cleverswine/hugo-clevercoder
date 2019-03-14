@@ -3,7 +3,7 @@ license = "MIT"
 licenselink = "https://github.com/cleverswine/hugo-swinix/blob/master/LICENSE"
 description = "Yet another theme for *nix users"
 homepage = "https://github.com/cleverswine/hugo-swinix"
-tags = []
+tags = ["blog", "responsive", "bootstrap", "dark", "pages"]
 features = []
 min_version = "0.41"
 

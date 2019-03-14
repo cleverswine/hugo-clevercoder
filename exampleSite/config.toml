@@ -5,6 +5,7 @@ author = "The Author"
 paginate = 12
 theme = "hugo-swinix"
 themesDir = "../.."
+sectionPagesMenu = "main"
 
 [params]
   # Name = "Your Name"
@@ -19,10 +20,12 @@ themesDir = "../.."
 
 [menu]
   [[menu.header]]
-    name = "posts"
-    weight = 0
-    url = "/posts"
-  [[menu.header]]
+    identifier = "about"
     name = "about"
-    weight = 0
-    url = "/pages/about"
+    url = "pages/about"
+    weight = 10
+  [[menu.header]]
+    identifier = "posts"
+    name = "posts"
+    url = "posts"
+    weight = 10    

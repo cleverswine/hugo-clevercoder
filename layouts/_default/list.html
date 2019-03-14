@@ -1,5 +1,6 @@
 {{ define "main" }}
 <h4>$ ls -l ~/{{ lower .Title }}/ | more</h4>
+<hr />
 <ul class="page-list">
   {{ range $index, $element := .Paginator.Pages }}
   <li>

@@ -1,15 +1,15 @@
 {{ define "main" }}
 <div class="row">
-    <div class="col-sm-4 mx-auto">
+    <div class="col-sm-4 mx-auto text-center">
         <img alt="profile-picture" class="img-responsive img-circle user-picture"
-            src="{{ .Site.Params.ProfilePicture | default "/profile.jpg" }}">
+            src="{{ .Site.Params.ProfilePicture | default "profile.png" }}">
 
     </div>
 </div>
 <div class="row">
     <div class="col-sm-12 text-center">
-        <h3>{{ .Site.Params.Name | default "My Name" }}</h3>
-        <h5>{{ .Site.Params.Description | default "I am a Linux power user" }}</h5>
+        <h3>{{ .Site.Params.Name | default "Tux McTuxington" }}</h3>
+        <h5>{{ .Site.Params.Description | default "Set a Params.Description and it will appear here" }}</h5>
         <h3>
             {{ with .Site.Params.email }}
             <a href="mailto:{{ . }}"><i class="fas fa-envelope" aria-hidden="true"></i></a>

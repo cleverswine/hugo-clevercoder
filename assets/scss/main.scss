@@ -14,13 +14,9 @@ body {
 }
 
 pre {
-	background-color: lighten($body-bg, 5%);
 	padding: 8px;
-	color: lighten($text-color, 5%);
-}
-
-.page-list {
-	padding-top: 18px;
+	background-color: $dark;
+	color: $text-color;
 }
 
 .user-picture {
