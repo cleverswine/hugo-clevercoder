@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="/">$HOME</a>
+    <a class="navbar-brand" href="/">{{ .Site.Params.Brand | default "$HOME" }}</a>
     <!-- <a class="navbar-brand" href="/">{{ .Site.Params.ShortName }}@{{ .Site.Params.Domain }}:~$</a> -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,12 +7,12 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
-            {{ range .Site.Menus.header }}
+            {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    ~/{{ .Name }}
+                    ~/{{ lower .Name }}
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     {{ range .Children }}
@@ -22,7 +22,7 @@
             </li>
             {{ else }}
             <li class="nav-item">
-                <a class="nav-link" href="{{ .URL }}">~/{{ .Name }}</a>
+                <a class="nav-link" href="{{ .URL }}">~/{{ lower .Name }}</a>
             </li>
             {{ end }}
             {{ end }}

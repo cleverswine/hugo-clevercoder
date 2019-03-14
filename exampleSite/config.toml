@@ -12,6 +12,7 @@ sectionPagesMenu = "main"
   # Description = "Software Engineer in USA"
   # ProfilePicture = "/profile.jpg"
   # UserName = "yourname"
+  # Brand = "Tuxxy"
   [params.contact]
     github = "https://github.com/username"
     twitter = "https://twitter.com/username/"
@@ -19,13 +20,13 @@ sectionPagesMenu = "main"
     flickr = "http://www.flickr.com/photos/username/"
 
 [menu]
-  [[menu.header]]
+  [[menu.main]]
     identifier = "about"
     name = "about"
-    url = "pages/about"
+    url = "/about/"
     weight = 10
-  [[menu.header]]
+  [[menu.main]]
     identifier = "posts"
     name = "posts"
-    url = "posts"
+    url = "/posts/"
     weight = 10    
