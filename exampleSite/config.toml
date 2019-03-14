@@ -7,11 +7,10 @@ theme = "hugo-clevercoder"
 themesDir = "../.."
 
 [params]
-  Name = "Your Name"
-  Description = "Software Engineer in USA"
-  ProfilePicture = "/profile.jpg"
-  ShortName = "myname"
-  Domain = "my.domain"
+  # Name = "Your Name"
+  # Description = "Software Engineer in USA"
+  # ProfilePicture = "/profile.jpg"
+  # UserName = "myname"
   [[params.social]]
     name = "github"
     url = "https://github.com/username"

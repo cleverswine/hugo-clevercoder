@@ -2,13 +2,14 @@
 <div class="row">
     <div class="col-sm-4 mx-auto">
         <img alt="profile-picture" class="img-responsive img-circle user-picture"
-            src="{{ .Site.Params.ProfilePicture }}">
+            src="{{ .Site.Params.ProfilePicture | default "/profile.jpg" }}">
+
     </div>
 </div>
 <div class="row">
     <div class="col-sm-12 text-center">
-        <h3>{{ .Site.Params.Name }}</h3>
-        <h5>{{ .Site.Params.Description }}</h5>
+        <h3>{{ .Site.Params.Name | default "My Name" }}</h3>
+        <h5>{{ .Site.Params.Description | default "I am a Linux power user" }}</h5>
     </div>
 </div>
 {{ end }}

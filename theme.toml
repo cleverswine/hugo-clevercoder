@@ -1,8 +1,8 @@
-name = "clevercoder"
+name = "swinix"
 license = "MIT"
-licenselink = "https://github.com/cleverswine/hugo-clevercoder/blob/master/LICENSE"
-description = "Yet another theme for coders and *nix users"
-homepage = "https://github.com/cleverswine/hugo-clevercoder"
+licenselink = "https://github.com/cleverswine/hugo-swinix/blob/master/LICENSE"
+description = "Yet another theme for *nix users"
+homepage = "https://github.com/cleverswine/hugo-swinix"
 tags = []
 features = []
 min_version = "0.41"
