@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h4>$ ls -l ~/{{ lower .Title }}/ | more</h4>
+<ul class="page-list">
+  {{ range $index, $element := .Paginator.Pages }}
+  <li>    
+      -rw-r--r-- 1 {{ .Site.Params.ShortName }} {{ .Site.Params.ShortName }} {{ printf "%05d" .WordCount }} {{ .PublishDate.Format "Jan 02 2006" }}
+      <a href="{{ .Permalink }}"> {{ .Title }}</a>    
+  </li>
+  {{ end }}
+  <!-- <li>--More--</li> -->
+</ul>
+{{ partial "pagination.html" $ }}
+{{ end }}

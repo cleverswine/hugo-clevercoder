@@ -1,0 +1,36 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My Title"
+author = "The Author"
+paginate = 12
+theme = "hugo-clevercoder"
+themesDir = "../.."
+
+[params]
+  Name = "Your Name"
+  Description = "Software Engineer in USA"
+  ProfilePicture = "/profile.jpg"
+  ShortName = "myname"
+  Domain = "my.domain"
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/username"
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/username/"
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/username/"
+  [[params.social]]
+    name = "flickr"
+    url = "http://www.flickr.com/photos/username/"
+
+[menu]
+  [[menu.header]]
+    name = "posts"
+    weight = 0
+    url = "/posts"
+  [[menu.header]]
+    name = "about"
+    weight = 0
+    url = "/pages/about"

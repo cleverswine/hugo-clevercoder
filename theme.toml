@@ -1,0 +1,12 @@
+name = "clevercoder"
+license = "MIT"
+licenselink = "https://github.com/cleverswine/hugo-clevercoder/blob/master/LICENSE"
+description = "Yet another theme for coders and *nix users"
+homepage = "https://github.com/cleverswine/hugo-clevercoder"
+tags = []
+features = []
+min_version = "0.41"
+
+[author]
+  name = "Kevin Noone"
+  homepage = "http://knoone.info"

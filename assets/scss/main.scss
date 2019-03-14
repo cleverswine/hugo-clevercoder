@@ -1,0 +1,100 @@
+$dark: #242930;
+$body-bg: #353b43;
+$text-color: #afbac4;
+$primary: #57cc8a;
+$navbar-dark-brand-color: $primary;
+$navbar-dark-brand-hover-color: lighten($primary, 10%);
+
+@import "../bootstrap-4.3.1/scss/bootstrap";
+
+body {
+    padding-top: 4.5rem;
+	font-family: 'Oxygen Mono', monospace;
+    color: $text-color;
+}
+
+pre {
+	background-color: lighten($body-bg, 5%);
+	padding: 8px;
+	color: lighten($text-color, 5%);
+}
+
+.page-list {
+	padding-top: 18px;
+}
+
+.user-picture {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.img-circle {
+	border-style: solid;
+	border-width: 5px;
+	border-color: $dark;
+    border-radius: 50%;
+}
+img {
+    max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+  }
+  
+.pagination {
+	display: block;
+	list-style: none;
+	padding: 0;
+	font-size: 0.8em;
+	text-align: center;
+	margin: 3em 0;
+}  
+.page-item {
+	display: inline-block;
+	.page-link {
+		display: block;
+		padding: 0.285em 0.8em;
+		background: $body-bg;
+		border: none;
+	}
+	&.active {
+		.page-link {
+			color: $body-bg;
+			background: $primary;
+			border-radius: 2em;
+		}
+	}
+}
+  
+// $dark: #28a745;
+// $white:    #fff !default;
+// $gray-100: #f8f9fa !default;
+// $gray-200: #e9ecef !default;
+// $gray-300: #dee2e6 !default;
+// $gray-400: #ced4da !default;
+// $gray-500: #adb5bd !default;
+// $gray-600: #6c757d !default;
+// $gray-700: #495057 !default;
+// $gray-900: #212529 !default;
+// $black:    #000 !default;
+
+// $blue:    #007bff !default;
+// $indigo:  #6610f2 !default;
+// $purple:  #6f42c1 !default;
+// $pink:    #e83e8c !default;
+// $red:     #dc3545 !default;
+// $orange:  #fd7e14 !default;
+// $yellow:  #ffc107 !default;
+// $green:   #28a745 !default;
+// $teal:    #20c997 !default;
+// $cyan:    #17a2b8 !default;
+
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $green;
