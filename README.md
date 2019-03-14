@@ -1,0 +1,2 @@
+# hugo-clevercoder
+Hugo theme
