@@ -9,9 +9,7 @@
     </div>
     {{- partial "footer.html" . -}}
 </body>
-{{ $jq := resources.Get "jquery-3.3.1.slim.min.js" | resources.Fingerprint }}
-<script src="{{ $jq.Permalink}}"></script>
-{{ $bsjs := resources.Get "bootstrap-4.3.1/js/dist/dropdown.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ $bsjs.Permalink}}"></script>
+<script src="/jquery-3.3.1.slim/jquery.slim.min.js"></script>
+<script src="/bootstrap-4.3.1/js/dist/dropdown.js"></script>
 
 </html>

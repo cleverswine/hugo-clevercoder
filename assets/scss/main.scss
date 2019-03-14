@@ -5,7 +5,7 @@ $primary: #57cc8a;
 $navbar-dark-brand-color: $primary;
 $navbar-dark-brand-hover-color: lighten($primary, 10%);
 
-@import "../bootstrap-4.3.1/scss/bootstrap";
+@import "bootstrap-4.3.1/bootstrap";
 
 body {
     padding-top: 4.5rem;

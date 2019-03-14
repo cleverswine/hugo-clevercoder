@@ -3,26 +3,19 @@ languageCode = "en-us"
 title = "My Title"
 author = "The Author"
 paginate = 12
-theme = "hugo-clevercoder"
+theme = "hugo-swinix"
 themesDir = "../.."
 
 [params]
   # Name = "Your Name"
   # Description = "Software Engineer in USA"
   # ProfilePicture = "/profile.jpg"
-  # UserName = "myname"
-  [[params.social]]
-    name = "github"
-    url = "https://github.com/username"
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/username/"
-  [[params.social]]
-    name = "linkedin"
-    url = "https://www.linkedin.com/in/username/"
-  [[params.social]]
-    name = "flickr"
-    url = "http://www.flickr.com/photos/username/"
+  # UserName = "yourname"
+  [params.contact]
+    github = "https://github.com/username"
+    twitter = "https://twitter.com/username/"
+    linkedin = "https://www.linkedin.com/in/username/"
+    flickr = "http://www.flickr.com/photos/username/"
 
 [menu]
   [[menu.header]]
