@@ -1,2 +1,2 @@
-# hugo-clevercoder
+# hugo-swinix
 Hugo theme
